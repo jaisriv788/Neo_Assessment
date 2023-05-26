@@ -1,0 +1,142 @@
+body {
+  background-color: #040406;
+}
+
+.box {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3387d5;
+  height: 500px;
+  width: 400px;
+  background-color: #0b0819;
+  border-radius: 15px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border: 1px solid orange;
+}
+
+.box1::after {
+  content: "";
+  position: absolute;
+
+  /* size */
+  width: 70px;
+  height: 70px;
+
+  /* center horizontaly */
+  left: 50%;
+  margin-left: -40px;
+
+  /* place verticaly */
+  top: 109px;
+
+  border-radius: 50%; /* circle magic */
+  border: 1px solid #3387d5;
+  border-top-color: #040406;
+  border-left-color: #040406;
+  transform: rotate(45deg);
+
+  background-color: #040406;
+}
+
+/* Inside the box */
+
+select {
+  width: 360px;
+  height: 60px;
+  margin-left: 20px;
+  border-color: #0b0819;
+  border-radius: 10px;
+  background-color: #1c1731;
+}
+
+.currentValue {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 25px 0px 25px;
+}
+
+.price {
+  font-family: "Poppins";
+  position: relative;
+  left: 180px;
+  bottom: 15px;
+  font-size: 24px;
+  color: #627eea;
+}
+
+.selectbox {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  height: 50px;
+  background-color: #1c1731;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+.selectbox img {
+  padding: 10px 0px 0px 10px;
+  width: 40px;
+  height: 30px;
+}
+.selectbox h3 {
+  position: relative;
+  bottom: 6px;
+}
+
+.modal {
+  position: relative;
+  left: 12rem;
+  top: 0.8rem;
+  cursor: pointer;
+}
+
+.val {
+  padding: 10px 25px 0px 25px;
+}
+
+.val p{
+  padding-bottom: 30px;
+}
+
+.buy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left:20px;
+  background: linear-gradient(94.37deg, #3387d5 -5.94%, #7a06c9 115.34%);
+  border-radius: 30px;
+  height: 40px;
+  width:90%;
+  top: 1.7rem;
+  margin-top:20px;
+  cursor: pointer;
+}
+
+.topIcon{
+  position: absolute;
+  z-index: 999999;
+  padding-right: 8px;
+  top:6.5rem;
+}
+
+.topIcon img{
+  width: 100px;
+  height:78px;
+}
